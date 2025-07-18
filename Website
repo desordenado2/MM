@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Matthew Martin - Portfolio</title>
+ <link rel="icon" type="image/x-icon" href="C:\Users\mtmartin\OneDrive - Glacier Bancorp, Inc\My Documents\MATT\Development\HTML\Matt.ico"> 
+ <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      /* Center the profile container horizontally */
+      display: flex;
+      justify-content: center;
+    }
+    .profile-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-bottom: 30px;
+      justify-content: flex-start;
+      margin: 0 auto;
+      max-width: 600px;
+    }
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 6px rgba(0,0,0,0.15);
+      flex-shrink: 0;
+    }
+    .profile-text h1 {
+      font-size: 2rem;
+      margin-bottom: 4px;
+    }
+    .profile-text p {
+      font-size: 1rem;
+      color: #555;
+      margin: 0;
+    }
+
+    /* Responsive: stack vertically on narrow screens */
+    @media (max-width: 400px) {
+      .profile-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .profile-photo {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 8px;
+      }
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      border-bottom: 2px solid #007acc;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+      color: #007acc;
+    }
+
+    /* About */
+    #about p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    /* Contact */
+    #contact form {
+      max-width: 400px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    #contact label {
+      margin: 10px 0 5px;
+      font-weight: 600;
+    }
+    #contact input, #contact textarea {
+      padding: 8px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+    #contact button {
+      margin-top: 15px;
+      padding: 10px;
+      font-size: 1.1rem;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #contact button:hover {
+      background-color: #005fa3;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+      color: #777;
+      border-top: 1px solid #ddd;
+    }
+
+    /* Responsive */
+    @media(max-width: 500px) {
+      body {
+        padding: 10px;
+      }
+      .profile-text h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="profile-container">
+      <img src="C:\Users\mtmartin\OneDrive - Glacier Bancorp, Inc\My Documents\MATT\Development\HTML\MatthewMartin.jpg" alt="Matthew Martin" class="profile-photo" />
+      <div class="profile-text">
+        <h1>Matthew Martin</h1>
+        <p>Commercial Loan Officer | Logan Utah</p>
+	<p>Email: matthew.martin@altabank.com <br> O: 435-774-1849&nbsp;&nbsp; M: 435-421-1899</p>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I specialize in helping businesses secure the financing they need to grow, invest, and succeed. <br>
+      With a strong background in financial analysis and relationship management, I take pride in crafting tailored lending solutions that align with each client’s goals and industry dynamics. <br>
+      I structure loans for commercial real estate, equipment financing, working capital, and expansion projects. My approach is rooted in transparency, responsiveness, and a deep understanding of the local and regional markets I serve. <br>
+      Whether you're a startup looking for your first commercial loan or an established company ready to scale, I’m here to provide expert guidance every step of the way.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/mldldoer" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Matthew Martin. All rights reserved.
+  </footer>
+
+</body>
+</html>
